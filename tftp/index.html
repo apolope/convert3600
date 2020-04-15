@@ -1,0 +1,42 @@
+Download files tftpd32.exe and tftpd32.ini to folder "C:\TFTP" and open tftpd32.exe
+Baixe os arquivos tftpd32.exe e tftpd32.ini para a pasta "C:\TFTP" e abra o tftpd32.exe
+https://github.com/apolope/convert3600/blob/master/tftp/tftpd32.exe
+https://github.com/apolope/convert3600/blob/master/tftp/tftpd32.ini
+
+Below the required settings
+Abaixo as configurações necessárias
+
+<img src"https://github.com/apolope/convert3600/blob/master/tftp/Global.png?raw=true" />
+[[https://github.com/apolope/convert3600/blob/master/tftp/Global.png|alt=GlobalConfig]]
+Global Settings
+TFTP Server = True
+TFTP Client = False
+SNTP Server = False
+Syslog Server = True
+DHCP Server = False
+DNS Server = False
+Enable IPV6 = False
+
+
+<img src"https://github.com/apolope/convert3600/blob/master/tftp/TFTP.png?raw=true" />
+[[https://github.com/apolope/convert3600/blob/master/tftp/TFTP.png|alt=TFTPConfig]]
+Base Directory = C:\TFTPD32
+TFTP Security = standard
+TFTP Configuration Timeout = 3
+TFTP Configuration Max Retrasnsmit = 6
+TFTP Configuration Tftp port = 69
+Advanced TFTP Options Option negotiation = False
+Advanced TFTP Options PXE Compability = True
+Advanced TFTP Options Show Progress bar = True
+Advanced TFTP Options Translate Unix file names = True
+Advanced TFTP Options Bind TFTP to this address = 172.16.1.101
+Advanced TFTP Options Allow '\' As virtual root = True
+Advanced TFTP Options Use anticipation windows of = False
+Advanced TFTP Options Hide Windows at startup = False
+Advanced TFTP Options Create "dir.txt" files = False
+Advanced TFTP Options Create md5 files = False
+Advanced TFTP Options Beep for long transfer = False
+
+Download IOS to folder "C:\TFTP"
+Baixe o IOS para a pasta "C:\TFTP"
+https://github.com/apolope/convert3600/blob/master/ap3g2-k9w7-tar.153-3.JAB.tar
