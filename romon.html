@@ -1,0 +1,46 @@
+#Command to apply in ROMON mode
+## The -> indicate a command to execute
+## The .. indicate a console return 
+## The // indicate a comment or example of command
+#Comandos para serem aplicados no modo ROMON
+## O -> indica um comando à executar
+## O .. indica o retorno do console
+## O \\ indica um comentario ou um exemplo de caomando
+
+
+//Before you turn on Cisco, connect the console cable and open serial connection with console port
+//After power on press ESC key repeatedly until the screen below appears
+\\Antes de você ligar o Cisco, conecte o cabo ao console e abra a conexão serial
+\\Após ligar pressione a tecla ESC repetidamente até que a tela abaixo apareça
+--------------------------------------------------------------
+..The system boot has been aborted.  The following
+..commands will finish loading the operating system
+..software:
+..
+..    ether_init
+..    tftp_init
+..    boot
+..
+..ap:
+--------------------------------------------------------------
+
+//After you send the SET IP_ADDR=172.16.1.56 command to set the IP and send the SET IP_SUBNET_MASK=255.255.255.0 to define netmask
+\\Em seguida envie o comando SET IP_ADDR=172.16.1.56 para definir o IP e o comando SET IP_SUBNET_MASK=255.255.255.0 para definir a máscara
+-> set IP_ADDR=172.16.1.56
+..ap:
+-> set IP_SUBNET_MASK=255.255.255.0
+..ap:
+
+//That done we need to initialize some functions with the commands below
+\\Feito isso precisamos inicializar algumas funções com os comandos abaixo
+->tftp_init
+..tftp_init success: You can now use tftp file system!
+->ether_init
+..Initializing ethernet port 0...
+..Ethernet speed is 1000 Mb - FULL Duplex
+->flash_init
+..Initializing Flash...
+.....The flash is already initialized.
+
+//Now finished starting everything we need in Cisco
+\\Agora já inicializamos tudo que é preciso no Cisco
