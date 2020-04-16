@@ -1,0 +1,35 @@
+#Command to apply in ROMON mode
+## The -> indicate a command to execute
+## The .. indicate a console return 
+## The // indicate a comment or example of command
+#Comandos para serem aplicados no modo ROMON
+## O -> indica um comando à executar
+## O .. indica o retorno do console
+## O \\ indica um comentario ou um exemplo de caomando
+
+//CAUTION, the command below format the flash memory unit, if you want to leave the current IOS and the new IOS no problem, as long as the equipment has memory to store them
+\\Muito CUIDADO, o comando abaixo formata a memória flash da unidade, caso você queria deixar o IOS atual e o novo IOS não tem problema, contanto que o equipamento possua memória para amarzenar-las
+->format flash:
+..Flash formated!
+..ap:
+
+//The command extract IOS to flash memory unit
+\\O comando abaixo extrai o aquivo para a memória flash
+->tar -xtract tftp://172.16.1.101/ap3g2-k9w7-tar.153-3.JAB.tar flash:
+..//Finish information of proccess \\Informação do fim do processo
+..ap:
+
+//The command define BOOT image
+\\O comando abaixo define a imagem do boot
+->set BOOT flash:/ap3g2-k9w7-mx.153-3.JAB/ap3g2-k9w7-xx.153-3.JAB
+
+//The command start IOS
+\\O comando abaixo inicializa o IOS
+->boot
+..Loading "flash:/ap3g2-k9w7-mx.153-3.JAB/ap3g2-k9w7-xx.153-3.JAB"...flash:/ap3g2-k9w7-mx.153-3.JAB/ap3g2-k9w7-xx.153-3.JAB
+
+//With that the process comes to an end and the equipment is with the Autonomous IOS
+\\Com isso o processo chega ao fim e o equipamento está com o IOS Autônomo
+
+//The default configuration password is Cisco (with a cap C) to use enable
+\\A senha de configuração padrão é Cisco (com o C maiúsculo) para usar o enable
